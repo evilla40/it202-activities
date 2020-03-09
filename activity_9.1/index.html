@@ -13,22 +13,29 @@
   </head>
   <body>
       
-      <div class="mdc-top-app-bar__row">
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-          <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
-          <span class="mdc-top-app-bar__title">Title</span>
-      </section>
-      <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download">file_download</button>
-          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Print this page">print</button>
-          <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Bookmark this page">bookmark</button>
-      </section>
-      </div>
+      <header class="mdc-top-app-bar" style="top:0; left:0">
+          <div class="mdc-top-app-bar__row mdc-top-app-bar--fixed-adjust" style="padding:0px">
+              <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
+                  <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button">menu</button>
+                  <span class="mdc-top-app-bar__title">Title</span>
+              </section>
+              <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
+                  <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Download">file_download</button>
+                  <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Print this page">print</button>
+                  <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Bookmark this page">bookmark</button>
+              </section>
+          </div>
+      </header>
       
-      <button class="mdc-button mdc-button--raised">
-      <div class="mdc-button__ripple"></div>
-      <span class="mdc-button__label" style="color:white">Button</span>
-      <script>mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-button--raised'));</script>
-</button>
+      <main class="mdc-top-app-bar--fixed-adjust">
+          <button class="mdc-button mdc-button--raised">
+              <div class="mdc-button__ripple"></div>
+              <span class="mdc-button__label" style="color:white">Button</span>
+              <script>mdc.ripple.MDCRipple.attachTo(document.querySelector('.mdc-button--raised'));</script>
+          </button>
+      </main>
+      
+      
+      
   </body>
 </html>
